@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: api-gateway
+  config:
+    import: optional:configserver:https://avparcialconfigserver.azurewebsites.net
+  cloud:
+    gateway:
+      default-filters:
+        - name: LogFilter
+
+info:
+  name: API Gateway
