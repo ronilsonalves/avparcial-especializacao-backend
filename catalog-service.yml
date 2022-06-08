@@ -1,16 +1,16 @@
 server:
   port: 8082
 
-spring:
-  datasource:
-    url: jdbc:mysql://localhost/catalog-service?createDatabaseIfNotExist=true&serverTimezone=UTC-3&useSSl=false
-    username: perseidasdev # substitua pelo seu usuário local
-    password:
+#spring:
+#  datasource:
+#    url: jdbc:mysql://localhost/catalog-service?createDatabaseIfNotExist=true&serverTimezone=UTC-3&useSSl=false
+#    username: perseidasdev # substitua pelo seu usuário local
+#    password:
 
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
 
 
 info:

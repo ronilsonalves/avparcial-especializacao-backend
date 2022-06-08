@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: movie-service
+  config:
+    import: optional:configserver:https://avparcialconfigserver.azurewebsites.net
+
+## As configurações abaixo estão sendo recebidas do nosso config server
+#  datasource:
+#    url: jdbc:mysql://localhost/movie-service?createDatabaseIfNotExist=true&serverTimezone=UTC-3&useSSl=false
+#    username: perseidasdev
+#    password:
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
