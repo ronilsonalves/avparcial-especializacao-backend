@@ -1,11 +1,13 @@
 # Avaliação Parcial - Especialização Back-end - Spring Cloud
-Repositório criado para armazenar código e arquivos de configuração da primeira avaliação parcial da especialização back-end do Certified Tech Developer
+> A avaliação parcial consiste em contruir uma aplicação baseada na arquitetura
+> de microsserviços usando o Spring Cloud, você pode verificar os microsserviços registrados no Eureka Server
+> clicando [_aqui._](https://avparcialeurekaserver.azurewebsites.net)
 
 ## O problema
 
 A partir da seguinte arquitetura de microsserviços, pedimos que você a implemente usando o Spring Cloud
 
-![Arquitetura de Microsserviços](https://lh5.googleusercontent.com/7YBYtT1TzGXqRK8HUZVP2JePK59AgYvpYDOAD4TxnwOVK2M1N5xqfPoIZFqYMRDE1r9wrcvq8AzOkTZmsNz2ywd8IY62Mg0PU0zyj5OMYcUsUmL8mtrXiLfw4YzQBGUqsTfHdzJryAcAg91M9A)
+![Arquitetura de Microsserviços](arquitetura.png)
 
 ## Estrutura
 
@@ -15,7 +17,9 @@ A partir da seguinte arquitetura de microsserviços, pedimos que você a impleme
 - Server config obtendo as configurações a partir deste repositório git
 - Eureka server para service discovery & service registry
 
-## Endpoints
-- `POST`  - `/movie` para cadastro de filme
-- `GET`   - `/movie/{genre}` para trazer filmes por gênero
-- `GET`   - `/catalog/{genre}` retorna o catalogo de filmes (no momento) por gênero.
+## Endpoints `APIGateway`
+> NOTA: Os endpoints abaixo estão rodando na Azure e estão disponíveis para testar.
+> Por favor, não abuse dos recursos de criação de filmes :)
+- `POST`  - `https://avparcialgateway.azurewebsites.net/movie` para cadastro de filme
+- `GET`   - `https://avparcialgateway.azurewebsites.net/movie/{genre}` para trazer filmes por gênero
+- `GET`   - `https://avparcialgateway.azurewebsites.net/catalog/{genre}` retorna o catalogo de filmes (no momento) por gênero.
