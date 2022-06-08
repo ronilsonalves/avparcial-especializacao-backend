@@ -1,0 +1,17 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/movie-service?createDatabaseIfNotExist=true&serverTimezone=UTC-3&useSSl=false
+    username: perseidasdev # substitua pelo seu usuário local
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+info:
+  name: Movie Service Application
