@@ -6,12 +6,12 @@ spring:
     gateway:
       routes:
         - id: movieRoute
-          uri: https://avmovieservice.azurewebsites.net/
-        #  uri: lb://MOVIE-SERVICE
+          #uri: https://avmovieservice.azurewebsites.net/
+          uri: lb://MOVIE-SERVICE
           predicates:
             - Path=/movie/**
         - id: catalogRoute
-          uri: https://avcatalogservice.azurewebsites.net/
-        #  uri: lb://CATALOG-SERVICE
+        #  uri: https://avcatalogservice.azurewebsites.net/
+          uri: lb://CATALOG-SERVICE
           predicates:
             - Path=/catalog/**
